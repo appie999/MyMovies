@@ -4,12 +4,17 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
-
 body {
     margin: 0;
     padding: 0;
     background-color: black;
   }
+
+  #home a{
+    color: rgb(255, 255, 255);
+    font-size:24px;
+    text-decoration: none;
+}
 
   #backimage{
     display: flex;
@@ -18,7 +23,7 @@ body {
 
 #logo{
     color: red;
-    padding-left: 80px;
+    margin-left: 80px;
     font-size: xx-large;
     }
     #home{
@@ -35,15 +40,112 @@ body {
         font-size:24px;
     }
 
+   
+    #information{
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 100px;
+       
+    }
 
+    #information div {
+      
+        margin: 20px;
+    }
 
+    #information button{
+        background-color: brown;
+        border-radius: 5px;
+    }
+    #information input{
+        background-color: brown;
+        color: white;
+        width: 500px;
+        height: 50px;
+        border-radius: 15px;
+        font-size: 19px;
+        padding-left: 10px;
+    }
 
+    #information ::placeholder{
+        text-align: center;
+        color: rgb(176, 176, 176);
+        font-size: 25px;
+    }
 
+    #TheStory{
+        background-color: brown;
+        padding: 20px;
+        height: 200px;
+        width:500px ;
+        border-radius: 20px;
+        color: white;
+        font-size: 20px;
+        resize: none;
+    }
+
+    #TheStory::placeholder{
+        color: rgb(176, 176, 176);
+        text-align: center;
+        padding-top: 80px;
+        font-size: 30px;
+    }
+    
+    #submit{
+        color: white;
+        text-align: center;
+        width: 100px;
+        height: 40px;
+        cursor: pointer;
+        font-size: large;
+    }
+
+    
+
+    #info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    
+    /* Basic styling for the upload container */
+.upload-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-right: 100px;
+}
+
+/* Style the label to look like a button */
+.upload-label {
+    padding: 40px 50px;
+    background-color:brown;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Change button color on hover */
+.upload-label:hover {
+    background-color: red;
+}
+
+/* Hide the default file input */
+#image-upload {
+    display: none;
+}
 
     #footer{
         display: flex;
         justify-content: center;
-        /* background-color: aqua; */
         padding-top: 70px;
         padding-bottom: 20px;
         color: white;

@@ -4,52 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies</title>
-    <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="home.css">
 </head>
-<body  id="body">
-    <div id="backimage">
-
-        <div  id="logo">
-            <h1>My Movies</h1>
+<body id="body">
+    <!-- Header Section -->
+    <header id="backimage" class="p-3" style="background-color: black;">
+        <div id="logo" class="text-center">
+            <h1 style="color: red; font-size: 80px;">My Movies</h1>
         </div>
-        <div id="home">
-            <a href="#">Home</a>
-            <a href="#">Add</a>
+        <div id="home" class="text-center">
+            <a href="home.html" class="mx-3">Home</a>
+            <a href="add.html" class="mx-3">Add</a>
+        </div>
+    </header>
+
+    <!-- Search Bar -->
+    <div id="search_bar" class="my-4 text-center">
+        <input id="search" type="text" placeholder="Search..." class="form-control w-50 mx-auto">
+    </div>
+
+    <!-- Movies Section -->
+    <div id="movies" class="my-4">
+        <h1 class="text-center text-white">Movies</h1>
+    </div>
+
+    <!-- Movie Images -->
+    <div class="container">
+        <div id="film" class="row justify-content-between mb-4">
+            <div class="col-md-2 col-sm-4 mb-3">
+                <img src="filmimages/first.jpg" class="img-fluid rounded" alt="">
+            </div>
+            <div class="col-md-2 col-sm-4 mb-3">
+                <img src="filmimages/second.jpg" class="img-fluid rounded" alt="">
+            </div>
+            <div class="col-md-2 col-sm-4 mb-3">
+                <img src="filmimages/3th.jpg" class="img-fluid rounded" alt="">
+            </div>
+            <div class="col-md-2 col-sm-4 mb-3">
+                <img src="filmimages/4th.jpg" class="img-fluid rounded" alt="">
+            </div>
+            <div class="col-md-2 col-sm-4 mb-3">
+                <img src="filmimages/5th.jpg" class="img-fluid rounded" alt="">
+            </div>
+        </div>
+
+        <div id="films" class="row justify-content-between">
+            <div class="col-md-2 col-sm-4 mb-3">
+                <img src="filmimages/6th.jpg" class="img-fluid rounded" alt="">
+            </div>
+            <div class="col-md-2 col-sm-4 mb-3">
+                <img src="filmimages/7th.jpg" class="img-fluid rounded" alt="">
+            </div>
+            <div class="col-md-2 col-sm-4 mb-3">
+                <img src="filmimages/8th.jpg" class="img-fluid rounded" alt="">
+            </div>
+            <div class="col-md-2 col-sm-4 mb-3">
+                <img src="filmimages/9th.jpg" class="img-fluid rounded" alt="">
+            </div>
+            <div class="col-md-2 col-sm-4 mb-3">
+                <img src="filmimages/10th.jpg" class="img-fluid rounded" alt="">
+            </div>
         </div>
     </div>
 
-    <div id="search_bar">
-        <input id="search" type="text" placeholder="Search...">
-           <button id="search_btn">
-            <span id="material-symbols-outlined">
-                search
-                </span>
-           </button>
-    </div>   
-    
-    <div id="movies">
-            <h1 class="text text-center">Movies</h1>    
-    </div>
-
-    <div id="film">
-        <div id="film1"></div>
-        <div id="film2"></div>
-        <div id="film3"></div>
-        <div id="film4"></div>
-        <div id="film5"></div>
-    </div>
-    
-    <div id="films">
-        <div id="film6"></div>
-        <div id="film7"></div>
-        <div id="film8"></div>
-        <div id="film9"></div>
-        <div id="film0"></div>
-    </div>
-    
-    <footer id="footer">
+    <!-- Footer -->
+    <footer id="footer" class="text-center py-3">
         <p>© 2025 Favorite Movies Manager. All rights reserved.</p>
     </footer>
+
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

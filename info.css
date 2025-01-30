@@ -4,22 +4,32 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
-
-body {
+#body {
     margin: 0;
     padding: 0;
     background-color: black;
   }
+
+  #home a{
+    color: rgb(255, 255, 255);
+    font-size:24px;
+    text-decoration: none;
+}
 
 #backimage{
     display: flex;
     justify-content: space-between;
   }
 
-#logo{
+  #logo{
+    margin-top: 50px;
     color: red;
-    padding-left: 80px;
+    margin-left: 80px;
     font-size: xx-large;
+    }
+
+    #logo h1{
+        font-size: 70px;
     }
 #home{
         display: flex;
@@ -35,15 +45,48 @@ body {
         font-size:24px;
     }
 
+#grandtitre{
+    margin-top: 40px;
+    color: white;
+    text-align: center;
+}
 
+#img img{
+    width: 200px;
+    height: 300px;
+   margin-top: 20px;
+   border-radius: 20px;
+}
 
+#rt{
+    width:  500px
+    
+}
+#ry{
+    width:  500px
+}
+#G{
+    width:  500px
+}
+#L{
+    width:  500px
+}
+#resume{
+    color: white;
+}
 
+#ditails div{
+   margin: 30px;
+}
 
+#hestory{
+    margin: 30px 400px 0px 160px;
+    /* background-color: aqua; */
+}
 
 #footer{
         display: flex;
         justify-content: center;
-        /* background-color: aqua; */
         padding-top: 70px;
         padding-bottom: 20px;
         color: white;

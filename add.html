@@ -13,21 +13,55 @@
         </div>
         
         <div id="home">
-            <a href="#">Home</a>
+            <a href="home.html">Home</a>
         </div>
     </div>
 
     <div id="info">
-        <div id="information"></div>
-        <div id="image"></div>
+        <div id="information">
+            
+                  <div>
+                    <input id="Title" name="Title" type="text" placeholder="Title" >
+                  </div>  
+                  <div>
+                    <input id="Release Year" name="Release Year" type="text" placeholder="Release Year">
+                  </div>  
+                  <div>
+                    <input id="Genre" name="Genre" type="text" placeholder="Genre">
+                  </div>  
+                  <div>
+                    <input id="Language" name="Language" type="text" placeholder="Language">
+                  </div>  
+                  <div>
+                    <input id="Runtime" name="Runtime" type="text" placeholder="Runtime">
+                  </div>  
+                  <div>
+    
+                    <textarea name="The Story" id="TheStory" cols="20" rows="10" placeholder="The Story"></textarea>
+                  </div>
+                  <div>
+                    <button id="submit">submit</button>
+                  </div> 
+            
+        </div>
+        <div id="image">
+            <div class="upload-container">
+                <label for="image-upload" class="upload-label">
+                    Choose an image
+                </label>
+                <input type="file" id="image-upload" accept="image/*">
+            </div>
+        </div>
     </div>
 
     <div id="story">
-        <h1>The Story</h1>
+        <h1 >The Story</h1>
     </div>
 
     <footer id="footer">
         <p>© 2025 Favorite Movies Manager. All rights reserved.</p>
     </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
