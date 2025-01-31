@@ -8,6 +8,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
+    /* overflow:hidden; */
   }
 
   #home a{
@@ -52,8 +53,7 @@ body {
     }
 
     #information div {
-      
-        margin: 20px;
+     margin: 20px;
     }
 
     #information button{
@@ -111,26 +111,43 @@ body {
         align-items: center;
     
     }
+
+    #image{
+    
+        
+    }
     
     /* Basic styling for the upload container */
 .upload-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    width: 400px;
     margin-right: 100px;
 }
 
+.upload-container img{
+    position:absolute;
+    width: 225px;
+    height: 300px;
+    border-radius: 5px;
+    margin-bottom: 277px;
+    background-color:brown
+    
+    
+}
+
 /* Style the label to look like a button */
-.upload-label {
+.upload_label {
     padding: 40px 50px;
     background-color:brown;
     color: white;
+    padding-top: 100px;
     border-radius: 5px;
     cursor: pointer;
     font-family: Arial, sans-serif;
     font-size: 16px;
-    transition: background-color 0.3s ease;
+
 }
 
 /* Change button color on hover */
@@ -139,7 +156,7 @@ body {
 }
 
 /* Hide the default file input */
-#image-upload {
+#image_upload {
     display: none;
 }
 
