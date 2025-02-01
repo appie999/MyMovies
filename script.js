@@ -8,6 +8,7 @@ let TheStory = document.getElementById('TheStory');
 let image_upload = document.getElementById('image_upload')
 let submit =document.getElementById('submit');
 let imgadd = document.getElementById('imgadd');
+const filmSection = document.getElementById("film");
 
 
 
@@ -48,7 +49,23 @@ submit.onclick = function(){
     localStorage.setItem('film',JSON.stringify(arrFilm))
 
     clearData()
-    showFilm()
+    let filmList = '';
+    arrFilm.forEach((film, index) => {
+        filmList += `
+            <div class="film-item" id="film-${index}">
+                <img src="${film.image_upload}" alt="${film.titel}" width="100">
+                <h3>${film.titel}</h3>
+                <p><strong>Release Year:</strong> ${film.Release_Year}</p>
+                <p><strong>Genre:</strong> ${film.Genre}</p>
+                <p><strong>Language:</strong> ${film.Language}</p>
+                <p><strong>Runtime:</strong> ${film.Runtime}</p>
+                <p><strong>Story:</strong> ${film.TheStory}</p>
+                <button onclick="deleteFilm(${index})">Delete</button>
+                <button onclick="updateFilm(${index})">Update</button>
+            </div>
+        `;
+    });
+    filmSection.innerHTML = filmList;
 
 }
 
@@ -63,17 +80,15 @@ function clearData(){
     Runtime.value = '';
     TheStory.value = '';
     Runtime.value = '';
-    imgadd.innerHTML = '';
+    imgadd.src = 'images/upload.png';
     image_upload.value = '';
     
 }
 
 //read films
 
-function showFilm(){
-console.log('hello');
-
-
+function showFilm() {
+    
 }
 
 
