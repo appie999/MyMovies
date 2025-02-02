@@ -75,26 +75,23 @@ function clearData(){
 //read films
 
 function showFilm() {
-    
     let filmList = '';
-    let arrFilms = JSON.parse(localStorage.getItem('film'));
+    let arrFilms = JSON.parse(localStorage.getItem('film')) || [];
+
     arrFilms.forEach((film, index) => {
         filmList += `
             <div class="film-item" id="film-${index}">
-                <img src="${film.image_upload}" alt="${film.titel}" width="100">
-                <h3>${film.titel}</h3>
-                <p><strong>Release Year:</strong> ${film.Release_Year}</p>
-                <p><strong>Genre:</strong> ${film.Genre}</p>
-                <p><strong>Language:</strong> ${film.Language}</p>
-                <p><strong>Runtime:</strong> ${film.Runtime}</p>
-                <p><strong>Story:</strong> ${film.TheStory}</p>
-                <button onclick="deleteFilm(${index})">Delete</button>
-                <button onclick="updateFilm(${index})">Update</button>
+                <a href="info.html?index=${index}">
+                    <img src="${film.image_upload}" alt="${film.titel}" width="100">
+                    <h3>${film.titel}</h3>
+                </a>
             </div>
         `;
     });
+
     filmSection.innerHTML = filmList;
 }
+
 
 
 //delete film
@@ -108,5 +105,9 @@ function deleteFilm(index) {
 
 
 //update film
+
+
+
+
 //clean data
 //search
